@@ -1,7 +1,7 @@
 .container {
-    background-color: darkred;
-    width: 500px;
     margin: 0 auto;
+    height: 800px;
+    width: 500px;
 }
 h1 {
     font-weight: bold;
@@ -11,4 +11,8 @@ h1 {
 p {
     text-align: center;
     color: yellow;
+    font-size: 25px;
+}
+.song {
+    background-color: black;
 }
