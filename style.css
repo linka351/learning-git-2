@@ -1,0 +1,14 @@
+.container {
+    background-color: darkred;
+    width: 500px;
+    margin: 0 auto;
+}
+h1 {
+    font-weight: bold;
+    color: chartreuse;
+    text-align: center;
+}
+p {
+    text-align: center;
+    color: yellow;
+}
