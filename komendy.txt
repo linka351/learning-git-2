@@ -1,2 +1,3 @@
-autoprefixer-cli -o main.prefixed.css main.css
-nu-html-checker *.html
+autoprefixer-cli -o main.prefixed.css style.css
+node_modules/.bin/browser-sync start --server --files "css/*.css" "*.html"
+
