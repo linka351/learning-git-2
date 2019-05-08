@@ -1,0 +1,29 @@
+{
+  "name": "learning-git-2",
+  "version": "1.0.0",
+  "description": "https://linka351.github.io/learning-git-2/",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.26.5",
+    "nu-html-checker": "^0.1.0"
+  },
+  "devDependencies": {
+    "globstar": "^1.0.0"
+  },
+  "scripts": {
+    "test": "npm run test:html",
+    "test:html": "globstar nu-html-checker *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linka351/learning-git-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linka351/learning-git-2/issues"
+  },
+  "homepage": "https://github.com/linka351/learning-git-2#readme"
+}
