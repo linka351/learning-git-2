@@ -1,4 +1,3 @@
-/node_modules
 # Logs
 logs
 *.log
@@ -21,12 +20,12 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+*.lcov
 
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage 
-(https://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -44,6 +43,9 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+
+# TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -84,4 +86,3 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
-.sass-cache

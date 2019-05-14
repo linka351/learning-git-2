@@ -9,11 +9,16 @@
     "nu-html-checker": "^0.1.0"
   },
   "devDependencies": {
-    "globstar": "^1.0.0"
+    "globstar": "^1.0.0",
+    "mkdirp": "^0.5.1"
   },
   "scripts": {
     "test": "npm run test:html",
-    "test:html": "globstar nu-html-checker *.html"
+    "test:html": "globstar nu-html-checker *.html",
+    "init-project": "npm install && npm run init:dirs && npm run init:files && npm run init:gitignore",
+	"init:dirs": "mkdirp sass css vendor images js",
+	"init:files": "touch README.md index.html sass/style.scss js/script.js",
+	"init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore"
   },
   "repository": {
     "type": "git",
