@@ -8,9 +8,6 @@
         "browser-sync": "^2.26.5",
         "node-sass": "^4.12.0",
         "nu-html-checker": "^0.1.0",
-        "raff": "^1.0.6",
-        "rim": "0.0.0",
-        "rimraf": "^2.6.3",
         "save-dev": "^2.0.0"
     },
     "devDependencies": {
@@ -27,7 +24,7 @@
         "init:files": "touch README.md index.html sass/style.scss js/script.js",
         "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
         "build": "npm-run-all build:* test",
-        "build:clean": "",
+        "build:clean": "rm -rf css/*.css && touch css/style.css",
         "build:sass": "node-sass --output-style compact -o css sass",
         "build:autoprefixer": "autoprefixer-cli css/style.css",
         "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
