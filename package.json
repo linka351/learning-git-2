@@ -1,46 +1,50 @@
 {
-  "name": "learning-git-2",
-  "version": "1.0.0",
-  "description": "https://linka351.github.io/learning-git-2/",
-  "main": "index.js",
-  "dependencies": {
-    "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.26.5",
-    "node-sass": "^4.12.0",
-    "nu-html-checker": "^0.1.0",
-    "save-dev": "^2.0.0"
-  },
-  "devDependencies": {
-    "globstar": "^1.0.0",
-    "mkdirp": "^0.5.1",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^5.2.0"
-  },
-  "scripts": {
-    "test": "npm-run-all test:*",
-    "test:html": "globstar nu-html-checker *.html",
-    "init-project": "npm install && npm-run-all init:*",
-    "init:dirs": "mkdirp sass css vendor images js",
-    "init:files": "touch README.md index.html sass/style.scss js/script.js",
-    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "build": "npm-run-all build:* test",
-    "build:sass": "node-sass --output-style compact -o css sass",
-    "build:autoprefixer": "autoprefixer-cli css/style.css",
-    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "watch": "npm-run-all build -p watch:*",
-    "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
-    "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
-    "watch:browser-sync":"node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/linka351/learning-git-2.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/linka351/learning-git-2/issues"
-  },
-  "homepage": "https://github.com/linka351/learning-git-2#readme"
+    "name": "learning-git-2",
+    "version": "1.0.0",
+    "description": "https://linka351.github.io/learning-git-2/",
+    "main": "index.js",
+    "dependencies": {
+        "autoprefixer-cli": "^1.0.0",
+        "browser-sync": "^2.26.5",
+        "node-sass": "^4.12.0",
+        "nu-html-checker": "^0.1.0",
+        "raff": "^1.0.6",
+        "rim": "0.0.0",
+        "rimraf": "^2.6.3",
+        "save-dev": "^2.0.0"
+    },
+    "devDependencies": {
+        "globstar": "^1.0.0",
+        "mkdirp": "^0.5.1",
+        "npm-run-all": "^4.1.5",
+        "onchange": "^5.2.0"
+    },
+    "scripts": {
+        "test": "npm-run-all test:*",
+        "test:html": "globstar nu-html-checker *.html",
+        "init-project": "npm install && npm-run-all init:*",
+        "init:dirs": "mkdirp sass css vendor images js",
+        "init:files": "touch README.md index.html sass/style.scss js/script.js",
+        "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+        "build": "npm-run-all build:* test",
+        "build:clean": "",
+        "build:sass": "node-sass --output-style compact -o css sass",
+        "build:autoprefixer": "autoprefixer-cli css/style.css",
+        "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+        "watch": "npm-run-all build -p watch:*",
+        "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
+        "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
+        "watch:browser-sync": "node_modules/.bin/browser-sync start --server --files 'css/*.css' '*.html'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/linka351/learning-git-2.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/linka351/learning-git-2/issues"
+    },
+    "homepage": "https://github.com/linka351/learning-git-2#readme"
 }
